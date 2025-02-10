@@ -1,0 +1,59 @@
+html{
+    height: 100px;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/322/738/desktop-wallpaper-83-hawaii-hawaii-background.jpg");
+    background-size: cover;
+    height: 100px;
+}
+
+button{
+    margin: 2rem;
+    background-color: teal;
+    color: whitesmoke;
+    padding: .5rem 1rem;
+    border: 0;
+    box-shadow: 0 0 12px 8px rgba(0,0,0,0.3);
+    cursor :pointer;
+
+}
+
+button:hover{
+    background-color: darkslategrey;
+}
+.model{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.model__overlay{
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.4);
+}
+
+.model__content{
+    background-color: white;
+    padding: 4rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.model.open{
+    display: flex;
+}
